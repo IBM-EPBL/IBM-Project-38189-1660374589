@@ -1,4 +1,7 @@
 # IBM-Project-38189-1660374589
 University Admit Eligibility Predictor
 
-Sandesh Selvin Praveen Saran
+Sandesh A
+Selvin Wellington A
+Praveen Rijal
+Saran Anish V
