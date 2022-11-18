@@ -45,6 +45,7 @@
               min="50"
               max="120"
               required
+              width="10px"
             />
           </div>
           <div class="form-group Spacing">
@@ -61,51 +62,50 @@
               required
             />
           </div>
-          <div class="form-group Spacing">
-            <br />
-            <label for="sop" class="col-sm-8">SOP(0 to 5):</label><br />
-            <input
-              type="range"
-              name="sop"
-              placeholder="SOP"
-              list="tickmarks"
-              min="0"
-              max="5"
-              required
-            />
+          <div class="d-flex">
+            <div
+              class="form-group Spacing col-sm-6 justify-content-center d-flex"
+            >
+              <label for="sop" class="col-sm-8">SOP(0 to 5):</label>
+              <input
+                type="range"
+                name="sop"
+                placeholder="SOP"
+                list="tickmarks"
+                min="0"
+                max="5"
+                required
+              />
 
-            <datalist name="sop" id="tickmarks">
-              <option value="0"></option>
-              <option value="1"></option>
-              <option value="2"></option>
-              <option value="3"></option>
-              <option value="4"></option>
-              <option value="5"></option>
-            </datalist>
-            <br />
-            <br />
-          </div>
-          <div class="form-group Spacing">
-            <label for="lor" class="col-sm-8">LOR:(0 to 5)</label><br />
-            <input
-              type="range"
-              name="lor"
-              placeholder="LOR"
-              min="0"
-              max="5"
-              list="lortick"
-              required
-            />
-            <datalist name="lor" id="lortick">
-              <option value="0"></option>
-              <option value="1"></option>
-              <option value="2"></option>
-              <option value="3"></option>
-              <option value="4"></option>
-              <option value="5"></option>
-            </datalist>
-            <br />
-            <br />
+              <datalist name="sop" id="tickmarks">
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+              </datalist>
+            </div>
+            <div class="form-group Spacing col-sm-6 justify-content-center">
+              <label for="lor" class="col-sm-8">LOR:(0 to 5)</label>
+              <input
+                type="range"
+                name="lor"
+                placeholder="LOR"
+                min="0"
+                max="5"
+                list="lortick"
+                required
+              />
+              <datalist name="lor" id="lortick">
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+              </datalist>
+            </div>
           </div>
           <div class="form-group Spacing">
             <label for="cgpa" class="col-sm-3">CGPA(5 to 10):</label>
@@ -120,17 +120,20 @@
             />
           </div>
           <div class="form-group Spacing">
-            <label for="research" class="col-sm-3">Research Experience:</label
+            <label for="research" class="col-sm-3 p-3"
+              >Research Experience:</label
             ><br />
             <input
+              class="p-2"
               type="radio"
               name="research"
               placeholder="Research"
               value="1"
               required
             />
-            Yes
+            Yes &nbsp;&nbsp;
             <input
+              class="p-2"
               type="radio"
               name="research"
               placeholder="Research"
