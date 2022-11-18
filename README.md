@@ -23,7 +23,7 @@ Evaluation metrics.
 Build a web application using the Flask framework.
 
 # Architecture Diagram:
-![image](https://ibb.co/5WNBDVK)
+![image](Assessments/arcdiag.png)
 
 # Domain:
 Applied Data Science
