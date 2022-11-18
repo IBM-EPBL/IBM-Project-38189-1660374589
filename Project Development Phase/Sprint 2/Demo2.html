@@ -25,6 +25,8 @@
               name="greScore"
               placeholder="GRE Score"
               class="form-control col-sm-8"
+              min="250"
+              max="340"
               required
             />
           </div>
@@ -34,6 +36,8 @@
               name="toeflScore"
               placeholder="TOEFL Score"
               class="form-control col-sm-8"
+              min="50"
+              max="120"
               required
             />
           </div>
@@ -41,19 +45,35 @@
             <label for="univRank" class="col-sm-3">University Rating:</label>
             <input
               name="univRank"
-              placeholder="University Rank"
+              placeholder="University Rating"
               class="form-control col-sm-8"
+              min="1"
+              max="5"
               required
             />
           </div>
           <div class="form-group Spacing">
+            <br />
             <label for="sop" class="col-sm-3">SOP:</label>
             <input
+              type="range"
               name="sop"
               placeholder="SOP"
-              class="form-control col-sm-8"
-              required
+              list="tickmarks"
+              min="0"
+              max="5"
             />
+
+            <datalist name="sop" id="tickmarks">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+            </datalist>
+            <br />
+            <br />
           </div>
           <div class="form-group Spacing">
             <label for="lor" class="col-sm-3">LOR:</label>
@@ -61,6 +81,8 @@
               name="lor"
               placeholder="LOR"
               class="form-control col-sm-8"
+              min="0"
+              max="5"
               required
             />
           </div>
@@ -70,16 +92,18 @@
               name="cgpa"
               placeholder="CGPA"
               class="form-control col-sm-8"
+              min="5"
+              max="10"
               required
             />
           </div>
           <div class="form-group Spacing">
-            <label for="research" class="col-sm-3">Research:</label>
+            <label for="research" class="col-sm-3">Research Experience:</label
+            ><br />
             <input
               type="radio"
               name="research"
               placeholder="Research"
-              class="form-control col-sm-8"
               value="1"
               required
             />
@@ -88,7 +112,6 @@
               type="radio"
               name="research"
               placeholder="Research"
-              class="form-control col-sm-8"
               value="0"
               required
             />
