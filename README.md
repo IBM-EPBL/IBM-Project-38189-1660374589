@@ -28,5 +28,5 @@ Build a web application using the Flask framework.
 # Domain:
 Applied Data Science
 
-#Deployment URL
+# Deployment URL
 https://univadmit--sandesh-aa.repl.co/
